@@ -1,0 +1,47 @@
+{
+  "name": "us-stock-logos",
+  "version": "1.0.0",
+  "description": "Logo resources for US-listed stocks, ADRs, and ETFs",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "us-stock-logos": "bin/cli.js"
+  },
+  "files": [
+    "dist/",
+    "lib/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngnmarket/us-companies-logos.git"
+  },
+  "homepage": "https://github.com/ngnmarket/us-companies-logos#readme",
+  "bugs": {
+    "url": "https://github.com/ngnmarket/us-companies-logos/issues"
+  },
+  "scripts": {
+    "process": "node scripts/process.js",
+    "validate": "node scripts/validate.js",
+    "prepack": "npm run validate"
+  },
+  "keywords": [
+    "stocks",
+    "us-stocks",
+    "nyse",
+    "nasdaq",
+    "adr",
+    "etf",
+    "logos",
+    "icons"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
